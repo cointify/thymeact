@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Ajax Form</title>
+    <link href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link href="/css/jumbotron-narrow.css" th:href="@{/css/jumbotron-narrow.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+
+    <div th:replace="fragments/header :: header">&nbsp;</div>
+
+    <div class="container">
+        <div class="row">
+            <h1>Ajax Forms</h1>
+            <hr/>
+            <form id="ajaxForm" class="form-horizontal" th:object="${user}" role="form">
+                <p>Note: Form element must not have an "action" and the button should be typed "button".</p>
+                <div class="form-group">
+                    <label for="inputEmail1" class="col-sm-2 control-label">First Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail1" th:field="*{firstName}" placeholder="First Name"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail2" class="col-sm-2 control-label">Last Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail2" th:field="*{lastName}" placeholder="Last Name"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail3" th:field="*{username}" placeholder="Username"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="button" class="btn btn-default" onclick="thymeModule.submitAjaxForm()">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+            <div id="ajaxBlock">
+            </div>
+        </div>
+    </div>
+
+    <div th:replace="fragments/footer :: footer">&nbsp;</div>
+</div>
+</body>
+</html>

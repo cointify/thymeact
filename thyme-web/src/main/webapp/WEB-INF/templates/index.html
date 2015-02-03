@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Home</title>
+    <link href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link href="/css/jumbotron-narrow.css" th:href="@{/css/jumbotron-narrow.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+
+    <div th:replace="fragments/header :: header">&nbsp;</div>
+
+    <div class="jumbotron">
+        <h1>ThymeLeaf Prototype</h1>
+        <p class="lead">Tests submitting of forms and fetching of data from server via AJAX.</p>
+        <p><a class="btn btn-lg btn-success" href="/ajax" th:href="@{/ajax}" role="button">Test Now</a></p>
+    </div>
+
+    <div th:replace="fragments/footer :: footer">&nbsp;</div>
+</div>
+</body>
+</html>
