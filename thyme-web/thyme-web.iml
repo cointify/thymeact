@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":thyme-web" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="thymeact" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":thyme-web" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="thymeact" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
-    <facet type="web" name="Web Gradle : thymeweb-1.0.war">
-      <configuration>
-        <webroots>
-          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
-        </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/java" />
-          <root url="file://$MODULE_DIR$/src/main/resources" />
-        </sourceRoots>
-      </configuration>
-    </facet>
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/spring/applicationContext-web.xml</file>
           <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/spring/applicationContext.xml</file>
         </fileset>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web Gradle : thymeweb.war">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+          <root url="file://$MODULE_DIR$/src/main/java" />
+        </sourceRoots>
       </configuration>
     </facet>
   </component>
@@ -42,7 +45,6 @@
     <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-tx:4.1.3.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: org.springframework:spring-webmvc:4.1.3.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: org.thymeleaf:thymeleaf-spring4:2.1.4.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: org.thymeleaf.extras:thymeleaf-extras-springsecurity3:2.1.1.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: org.apache.logging.log4j:log4j-api:2.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: org.apache.logging.log4j:log4j-core:2.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.4.2" level="project" />
@@ -63,5 +65,9 @@
     <orderEntry type="library" exported="" name="Gradle: org.unbescape:unbescape:1.1.0.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: javax.validation:validation-api:1.1.0.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.hibernate:hibernate-validator:5.1.3.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.jboss.logging:jboss-logging:3.1.3.GA" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.fasterxml:classmate:1.0.0" level="project" />
   </component>
 </module>

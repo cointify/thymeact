@@ -1,9 +1,16 @@
 package com.thymeweb.domain;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class User {
 
+    @NotEmpty(message = "Please enter username")
     private String username;
+
+    @NotEmpty(message = "Please enter first name")
     private String firstName;
+
+    @NotEmpty(message = "Please enter last name")
     private String lastName;
 
     public String getUsername() {

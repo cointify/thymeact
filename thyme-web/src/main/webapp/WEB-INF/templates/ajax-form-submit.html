@@ -19,7 +19,7 @@
 
     <div class="container">
         <div class="row">
-            <h1>Ajax Forms</h1>
+            <h1>Ajax Form Submit</h1>
             <hr/>
             <form id="ajaxForm" class="form-horizontal" th:object="${user}" role="form">
                 <p>Note: Form element must not have an "action" and the button should be typed "button".</p>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button type="button" class="btn btn-default" onclick="thymeModule.submitAjaxForm()">Submit</button>
+                        <button type="button" class="btn btn-default" onclick="thymeModule.ajaxFormSubmit()">Submit</button>
                     </div>
                 </div>
             </form>
