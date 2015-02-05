@@ -42,11 +42,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax-field-validation.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/fragments/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.769231" vertical-offset="121" max-vertical-offset="578">
+              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajax-field-validation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/ajax-field-validation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27051672" vertical-offset="353" max-vertical-offset="833">
+            <state vertical-scroll-proportion="-3.4230769" vertical-offset="353" max-vertical-offset="833">
               <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.40729484" vertical-offset="257" max-vertical-offset="612">
+              <caret line="23" column="127" selection-start-line="23" selection-start-column="127" selection-end-line="23" selection-end-column="127" />
               <folding />
             </state>
           </provider>
@@ -597,7 +617,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/thyme-web/src/main/webapp/css/custom.css" />
         <option value="$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/ajax-form-validation.html" />
-        <option value="$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/index.html" />
         <option value="$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/ajax-form-submit.html" />
         <option value="$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/fragments/header.html" />
         <option value="$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/spring/applicationContext-web.xml" />
@@ -605,6 +624,7 @@
         <option value="$PROJECT_DIR$/thyme-web/src/main/webapp/js/app.js" />
         <option value="$PROJECT_DIR$/thyme-web/src/main/java/com/thymeweb/web/controller/AjaxFormController.java" />
         <option value="$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/ajax-field-validation.html" />
+        <option value="$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/index.html" />
       </list>
     </option>
   </component>
@@ -1228,12 +1248,12 @@
       <workItem from="1422979875718" duration="2598000" />
       <workItem from="1422984359220" duration="16323000" />
       <workItem from="1423086850759" duration="753000" />
-      <workItem from="1423087981892" duration="4532000" />
+      <workItem from="1423087981892" duration="4835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27121000" />
+    <option name="totallyTimeSpent" value="27424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1279" height="728" extended-state="6" />
@@ -1595,14 +1615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="612">
-          <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/ajax-form-validation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1139">
@@ -1688,14 +1700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/fragments/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.98176295" vertical-offset="0" max-vertical-offset="578">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thyme-web/src/main/webapp/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="206" max-vertical-offset="901">
@@ -1718,8 +1722,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/ajax-field-validation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27051672" vertical-offset="353" max-vertical-offset="833">
+        <state vertical-scroll-proportion="-3.4230769" vertical-offset="353" max-vertical-offset="833">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/fragments/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.769231" vertical-offset="121" max-vertical-offset="578">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thyme-web/src/main/webapp/WEB-INF/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40729484" vertical-offset="257" max-vertical-offset="612">
+          <caret line="23" column="127" selection-start-line="23" selection-start-column="127" selection-end-line="23" selection-end-column="127" />
           <folding />
         </state>
       </provider>
