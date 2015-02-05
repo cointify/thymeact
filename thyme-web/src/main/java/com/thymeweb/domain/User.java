@@ -4,13 +4,13 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 public class User {
 
-    @NotEmpty(message = "Please enter username")
+    @NotEmpty
     private String username;
 
-    @NotEmpty(message = "Please enter first name")
+    @NotEmpty
     private String firstName;
 
-    @NotEmpty(message = "Please enter last name")
+    @NotEmpty
     private String lastName;
 
     public String getUsername() {

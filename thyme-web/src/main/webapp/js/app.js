@@ -12,8 +12,18 @@ var thymeModule = (function (){
         ajaxFormValidation: function() {
             $.post(url + "/ajax-form-validation", $("#form").serialize())
                 .success(function(data) {
-                    //$("#ajaxForm").hide();
                     $("#formBlock").html(data);
+                });
+        },
+        ajaxUsernameValidation: function(username) {
+            $.post(url + "/ajax-field-validation", { username: username })
+                .success(function(data) {
+                    $("#username-glyphicon").removeClass();
+                    if(data === true) {
+                        $("#username-glyphicon").addClass("glyphicon form-control-feedback glyphicon-ok");
+                    } else {
+                        $("#username-glyphicon").addClass("glyphicon form-control-feedback glyphicon-remove");
+                    }
                 });
         },
         poll: function() {

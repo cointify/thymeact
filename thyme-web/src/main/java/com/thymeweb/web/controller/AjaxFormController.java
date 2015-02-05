@@ -5,11 +5,11 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 @Scope("prototype")
@@ -39,6 +39,21 @@ public class AjaxFormController {
             return "ajax-form-validation :: #form";
         }
         return "fragments/ajax-result :: ajaxResult";
+    }
+
+    @RequestMapping(value = "/ajax-field-validation", method = RequestMethod.GET)
+    public String getAjaxFieldValidationView() {
+        return "ajax-field-validation";
+    }
+
+    @RequestMapping(value = "/ajax-field-validation", method = RequestMethod.POST)
+    @ResponseBody
+    public boolean processAjaxFieldSubmitWithValidationRequest(@RequestParam(value = "username") String username) {
+        List<String> usernames = new ArrayList<>();
+        usernames.add("singh");
+        usernames.add("peter");
+        usernames.add("john");
+        return usernames.contains(username);
     }
 
 }
