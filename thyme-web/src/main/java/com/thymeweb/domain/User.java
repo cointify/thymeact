@@ -4,7 +4,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 public class User {
 
-    @NotEmpty
+    @NotEmpty(message = "Username may not be empty")
     private String username;
 
     @NotEmpty

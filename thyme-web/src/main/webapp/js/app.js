@@ -16,15 +16,19 @@ var thymeModule = (function (){
                 });
         },
         ajaxUsernameValidation: function(username) {
-            $.post(url + "/ajax-field-validation", { username: username })
-                .success(function(data) {
-                    $("#username-glyphicon").removeClass();
-                    if(data === true) {
-                        $("#username-glyphicon").addClass("glyphicon form-control-feedback glyphicon-ok");
-                    } else {
-                        $("#username-glyphicon").addClass("glyphicon form-control-feedback glyphicon-remove");
-                    }
-                });
+            $("#username-glyphicon").removeClass();
+            if(username.length == 0) {
+                $("#username-glyphicon").addClass("glyphicon form-control-feedback");
+            } else {
+                $.post(url + "/ajax-field-validation", {username: username})
+                    .success(function (data) {
+                        if (data === true) {
+                            $("#username-glyphicon").addClass("glyphicon form-control-feedback glyphicon-ok");
+                        } else {
+                            $("#username-glyphicon").addClass("glyphicon form-control-feedback glyphicon-remove");
+                        }
+                    });
+            }
         },
         poll: function() {
             setInterval(function() {

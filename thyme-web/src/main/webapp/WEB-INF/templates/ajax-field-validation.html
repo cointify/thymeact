@@ -20,17 +20,16 @@
 
     <div class="container">
         <div class="row">
-            <h1>Ajax Field Validation</h1>
+            <h1>Ajax Value Validation</h1>
             <hr/>
             <div id="formBlock">
                 <form id="form" class="form-horizontal" role="form">
-                    <p>Available usernames: singh, peter, john</p>
+                    <p>Checks if a username already exists or not. For testing purposes you can use: singh, peter, john.</p>
                     <div class="form-group has-feedback">
                         <div class="col-sm-10">
                             <input type="text" class="form-control" name="username" placeholder="Username"
                                    onchange="thymeModule.ajaxUsernameValidation(this.value)"/>
                             <span id="username-glyphicon" class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                            <!--<span id="username-glyphicon" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>-->
                         </div>
                     </div>
                 </form>
